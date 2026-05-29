@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="nav">
-        <div class="menu">
-            <p><a href="#">Home</a></p>
-            <p><a href="#">About</a></p>
-            <p><a href="#">Contact</a></p>
-            <p><a href="#">Date</a></p>
-            <p><a href="#">Order</a></p>
-            <p><a href="#">Gallery</a></p>
+    <nav id="navigation">
+        <div id="menu" class="">
+            <a href="#projects" class="links" onclick="closeMenu()"><span>Projects</span></a>
+            <a href="#about-mark" class="links" onclick="closeMenu()"><span>About me</span></a>
+            <a href="#contacts" class="links" onclick="closeMenu()"><span>Contacts</span></a>
         </div>
-    </header>
+
+        <div id="lines" onclick="myFunction(this)" class="">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </nav>
 
     <main class="main">
         <div class="text">LOREM IPSUM</div>
         <div class="slogan">Where Music Comes Alive</div>
     </main>
 
+    <script>
+        function myFunction(nvi) {
+            nvi.classList.toggle("toggle");
+            document.getElementById("menu").classList.toggle("show");
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").classList.remove("show");
+            document.getElementById("lines").classList.remove("toggle");
+        }
+    </script>
 </body>
 </html>
