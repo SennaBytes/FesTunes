@@ -4,6 +4,10 @@ body {
      color: white
 }
 
+a {
+     text-decoration: none;
+}
+
 .nav {
      background-color: black;
      width: 100%;
