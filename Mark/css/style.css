@@ -17,10 +17,12 @@ a {
 }
 
 #navigation {
+    display: flex;
+    justify-content: right;
     position: sticky;
     top: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-right: 20px;
+    margin-right: 20px;
 }
 
 .line1, .line2, .line3 {
