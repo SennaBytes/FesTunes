@@ -1,7 +1,6 @@
 body {
      margin: 0;
      padding: 0;
-     color: white
 }
 
 a {
@@ -23,6 +22,7 @@ a {
     top: 20px;
     margin-right: 20px;
     margin-right: 20px;
+    background-color: black;
 }
 
 .line1, .line2, .line3 {
