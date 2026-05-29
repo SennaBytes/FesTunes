@@ -26,7 +26,7 @@ a {
 .line1, .line2, .line3 {
     width: 35px;
     height: 5px;
-    background-color: #2CCEC8;;
+    background-color: #DEE14F;
     border-radius: 10px;
     margin: 6px 0;
     transition: 0.4s;
@@ -59,7 +59,7 @@ a {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #2CCEC8;
+    background: #DEE14F;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +79,7 @@ a {
 }
 
 #menu a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
     transition: 0.3s;
