@@ -22,6 +22,9 @@ a {
     top: 20px;
     margin-right: 20px;
     margin-right: 20px;
+    background-color: violet;
+    width: 100%;
+    height: 5rem;
 }
 
 .line1, .line2, .line3 {
