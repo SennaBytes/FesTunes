@@ -1,3 +1,118 @@
 body {
-     background-color: cyan;
+     margin: 0;
+     padding: 0;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+}
+
+#lines {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    z-index: 2000;
+}
+
+#navigation {
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 20px;
+    margin-right: 20px;
+    margin-right: 20px;
+    background-color: violet;
+    width: 100%;
+    height: 5rem;
+}
+
+.line1, .line2, .line3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DEE14F;
+    border-radius: 10px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.toggle .line1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #DEE14F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+#menu.show {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#menu a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    transform: scale(1.2);
+}
+
+#menu.show ~ #lines .line1,
+#menu.show ~ #lines .line2,
+#menu.show ~ #lines .line3 {
+    background-color: white;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 900;
+}
+
+#overlay.show {
+    opacity: 1;
+    pointer-events: all;
 }

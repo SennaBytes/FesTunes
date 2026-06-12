@@ -22,8 +22,16 @@ We are currently working on a group project called: PROMOTE IT, where we make a 
 - Responsive layout
 - Collaborative development
 - Modern frontend styling
+<<<<<<< HEAD
+
+# 📸 Project Goal:
+Pass the group project 😭😭😭😭😭
+
+---
+=======
 
 #  Project Goal:
 Pass the group project 😭😭😭😭
 
 ---
+>>>>>>> cdd3e4c434809db89d9d253ba587e3f52dc16637
