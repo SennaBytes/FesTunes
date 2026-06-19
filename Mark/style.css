@@ -78,3 +78,14 @@ nav {
   height: auto;
   flex-shrink: 0;
 }
+
+@media (min-width: 1645px) {
+  .section-heading {font-size: 50px;}
+  .section-body {font-size: 20px;}
+  .right img {width: 900px;
+              height: auto;
+  }
+  .left h1 {font-size: 100px;
+            margin-top: 200px;
+  }
+}
