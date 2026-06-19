@@ -145,3 +145,7 @@ h1 {
 .submit-row button:hover {
   background: #d6cece;
 }
+
+@media (min-width: 1645px) {
+  main {padding: 220px 20px;}
+}
