@@ -51,9 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <nav>
     <span class="logo"><img src="assets/Logo-FesTune.png" alt="Logo"></span>
     <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="../Contact/contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About/about.html">About</a></li>
+        <li><a href="Contact/contact.html">Contact</a></li>
         <li><a href="#">Date</a></li>
         <li><a href="#">Orde Page</a></li>
         <li><a href="#">Gallery</a></li>
