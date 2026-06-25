@@ -1,11 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FesTune</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend', sans-serif;
+    background: #ffecc3;
+    color: #111;
+}
+
+nav {
+    background-color: #ffd64e;
+    padding: 0 60px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    color: #111;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+h1{
+    text-align: center;
+    padding: 40px;
+    background-color: #eee;
+}
+
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    transition: 0.2s ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .gallery{
+        padding: 20px;
+    }
+}
+</style>
 </head>
+
 <body>
-<h1>haiha</h1>
+
+<nav>
+    <h2>FesTune</h2>
+
+    <ul class="nav-links">
+        <li><a href="../Mark/index.html">Home</a></li>
+        <li><a href="../Mark/About/about.html">About</a></li>
+        <li><a href="../Mark/Contact/contact.html">Contact</a></li>
+        <li><a href="#">Date</a></li>
+        <li><a href="../Mark/Order-Page/bestellen.php">Order Page</a></li>
+        <li><a href="../Atakan/index.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<h1>Artiesten van FesTune</h1>
+
+<div class="gallery">
+
+    <a href="martin.html" class="card">
+        <img src="603409.jpg" alt="Martin Garrix">
+        <h2>Martin Garrix</h2>
+        <p>Martin Garrix is een van de bekendste Nederlandse dj's en producers ter wereld...</p>
+    </a>
+
+    <a href="frenna.html" class="card">
+        <img src="Foto-Frenna-Tiagolopu-1-scaled.jpg" alt="Frenna">
+        <h2>Frenna</h2>
+        <p>Frenna is een populaire Nederlandse rapper en zanger...</p>
+    </a>
+
+    <a href="davina.html" class="card">
+        <img src="download.jpg" alt="Davina Michelle">
+        <h2>Davina Michelle</h2>
+        <p>Davina Michelle is een succesvolle Nederlandse zangeres...</p>
+    </a>
+
+</div>
+
+
+
 </body>
 </html>
