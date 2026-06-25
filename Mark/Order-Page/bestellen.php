@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <li><a href="../Contact/contact.html">Contact</a></li>
         <li><a href="#">Date</a></li>
         <li><a href="../Order-Page/bestellen.php">Orde Page</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="../../Atakan/index.html">Gallery</a></li>
     </ul>
 </nav>
 
