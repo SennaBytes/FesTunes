@@ -1,0 +1,151 @@
+body {
+  font-family: 'Lexend', sans-serif;
+  background: #ffecc3;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #ffd64e;
+  padding: 0 60px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 50px;
+  color: #111;
+}
+
+.form-layout {
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.form-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+}
+
+.form-group input {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  height: 52px;
+  padding: 0 16px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  color: #111;
+  outline: none;
+}
+
+.form-group input:focus {
+  outline: 2px solid #ffd64e;
+}
+
+.form-right {
+  flex: 1.2;
+}
+
+.form-right textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  color: #111;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-right textarea:focus {
+  outline: 2px solid #ffd64e;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.submit-row button {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 60px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+}
+
+.submit-row button:hover {
+  background: #d6cece;
+}
+
+@media (min-width: 1645px) {
+  main {padding: 220px 20px;}
+}
